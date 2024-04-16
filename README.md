@@ -17,6 +17,8 @@ Build #AI-233.14475.28.2331.11514062, built on February 29, 2024
 Runtime version: 17.0.10+0--11446219 amd64
 VM: OpenJDK 64-Bit Server VM by JetBrains s.r.o.
 
+Kotlin version : 1.9.0
+
 
 
 **Code:**
