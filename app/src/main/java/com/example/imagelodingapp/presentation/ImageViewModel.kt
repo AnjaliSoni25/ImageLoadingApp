@@ -1,6 +1,7 @@
 package com.example.imagelodingapp.presentation
 
 import android.graphics.Bitmap
+import android.util.Log
 import android.widget.Toast
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -35,7 +36,7 @@ class ImageViewModel @Inject constructor(private val repository: UnsplashReposit
                 _images.postValue(_images.value.orEmpty() + fetchedImages)
                 currentPage++
             } catch (e: Exception) {
-                // Handle error
+                Log.e("ImageViewModel", "Error fetching images: ${e.message}", e)
             } finally {
                 _isLoading.value = false
             }

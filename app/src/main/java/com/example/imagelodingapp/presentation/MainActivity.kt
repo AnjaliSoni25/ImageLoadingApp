@@ -62,7 +62,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             ImageLodingAppTheme {
                 val images by viewModel.images.observeAsState(initial = emptyList())
-                  Log.d("Response", "onCreate: "+images.size)
+                 // Log.d("Response", "onCreate: "+images.size)
                 val isLoading by viewModel.isLoading.observeAsState(false)
                 ImageGrid(
                     images = images,
