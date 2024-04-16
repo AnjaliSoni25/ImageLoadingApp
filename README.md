@@ -19,13 +19,7 @@ VM: OpenJDK 64-Bit Server VM by JetBrains s.r.o.
 
 
 
-**ScreenShot** :
-
-![Screenshot_2024-04-16-11-24-05-840_com example imagelodingapp 1](https://github.com/AnjaliSoni25/ImageLoadingApp/assets/31882434/e26c1561-dc33-4fdd-a74b-7bd67d61d9ac)
-
-
-
-Code:
+**Code:**
 
 Image Grid View with pagination:
 
@@ -87,3 +81,9 @@ fun ImageGrid(images: List<Bitmap>, isLoading: Boolean, onLoadMore: () -> Unit) 
                     onLoadMore = { viewModel.loadNextPage() }
                 )
             }
+
+
+
+**ScreenShot** :
+
+![Screenshot_2024-04-16-11-24-05-840_com example imagelodingapp 1](https://github.com/AnjaliSoni25/ImageLoadingApp/assets/31882434/e26c1561-dc33-4fdd-a74b-7bd67d61d9ac)
